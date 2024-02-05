@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grocery List</title>
+    <link rel="stylesheet" href="main.css">
+    
 </head>
 
 <!-- 
@@ -21,17 +23,17 @@
         <h1>NomNotes</h1>
         <div class="container">
             <div class="input-bar">
-                <input type="text">
+                <input type="text" id="item-input" name="item-input" placeholder="e.g. kimchi">
                 <div class="submit">
                     <button>Submit</button>
                 </div>
             </div>
             <div class="grocery-list">
                 <!-- currently hard coded list -->
-                <ul>
-                    <li>Bacon</li>
-                    <li>Milk</li>
-                    <li>Eggs</li>
+                <ul id="grocery-list">
+                    <li><input type="checkbox">Bacon</li>
+                    <li><input type="checkbox">Milk</li>
+                    <li><input type="checkbox">Eggs</li>
                 </ul>
             </div>
             <!-- clears items only in this list -->
@@ -43,16 +45,15 @@
         <div class="cart">
             <h1>Currently in Cart</h1>
             <!-- clear all items in both list -->
+            <ul id="cart-list">
+                <li>Kimchi</li>
+            </ul>
             <div class="finishBtn">
                 <button>Done</button>
             </div>
 
 
         </div>
-
-
-
-
     </div>
 
 

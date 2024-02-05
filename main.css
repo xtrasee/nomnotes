@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'hooey';
+    src: url(/fonts/hooey.otf);
+}
+@font-face {
+    font-family: 'hind';
+    src: url(/fonts/Hind-Light.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fffcf4;
+    font-family: 'hind';
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+    color: #141E46;
+}
+
+.wrapper{
+    background-color: #fff7e6;
+    border-radius: 10px;
+    padding: 3rem;
+}
+
+h1{
+    font-family: 'hooey';
+    text-align: center;
+    color: #C70039;
+    font-size: 3.5rem;
+}
+
+/* input */
+.input-bar{
+    width: 100%;
+    display: flex;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.input-bar input{
+    width: 100%;
+    background-color: #f9f5ed;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-right: none;
+    border: 0.75px solid #141E46;
+}
+
+input:focus{
+    outline: 0;
+    border: 1px solid #FF6969;
+}
+
+.submit button{
+    width: 100%;
+    font-family: 'Hind';
+    padding: 0.25rem 0.75rem;
+    background-color: #FF6969;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 0.75px solid #141E46;
+}
+
+/* grocery list */
+
+ul{
+    list-style-type: none;
+}
+
+input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+.clearBtn button,
+.finishBtn button{
+    margin: 2rem 0rem;
+    font-family: 'Hind';
+    padding: 0.25rem 0.75rem;
+    background-color: #FF6969;
+    width: 75%;
+}
+
+.clearBtn, .finishBtn{
+    text-align: center;
+}
