@@ -23,9 +23,35 @@ body{
 }
 
 .wrapper{
+    position: relative;
     background-color: #fff7e6;
     border-radius: 10px;
     padding: 3rem;
+    box-shadow:  6px 6px 60px #ede6d6,
+             -6px -6px 60px #fffff6;
+}
+
+.content{
+    position: relative;
+    z-index: 1;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 0;
+    right: 18%;
+    width: 15%;
+    height: 15%;
+    z-index: 2;
+}
+
+.overlay-image-2 {
+    position: absolute;
+    top: 65%;
+    right: 63%;
+    width: 20%;
+    height: 20%;
+    z-index: 2;
 }
 
 h1{
@@ -72,6 +98,8 @@ input:focus{
 
 ul{
     list-style-type: none;
+    width: 75%;
+    margin-left: 12.5%;
 }
 
 input[type="checkbox"] {
@@ -84,7 +112,9 @@ input[type="checkbox"] {
     font-family: 'Hind';
     padding: 0.25rem 0.75rem;
     background-color: #FF6969;
-    width: 75%;
+    width: 50%;
+    border-radius: 8px;
+    font-size: 0.75rem;
 }
 
 .clearBtn, .finishBtn{

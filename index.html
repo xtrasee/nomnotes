@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grocery List</title>
     <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/1ded1ed97d.js" crossorigin="anonymous"></script>
     
 </head>
 
@@ -16,46 +17,53 @@
     -edit function
     -clear all function
     -check function and moves to list of "in cart" list
+
+    attribution: <a href='https://pngtree.com/freepng/god-chef-big-brother-expression-grocery-shopping-god-cook-expression-illustration-god-chef-big-brother-expression_3886555.html'>png image from pngtree.com/</a>
  -->
 <body>
-    
+    <img src="/img/dumpling.png" alt="" class="overlay-image">
+    <img src="/img/chef.png" alt="" class="overlay-image-2">
     <div class="wrapper">
-        <h1>NomNotes</h1>
-        <div class="container">
-            <div class="input-bar">
-                <input type="text" id="item-input" name="item-input" placeholder="e.g. kimchi">
-                <div class="submit">
-                    <button>Submit</button>
+        <div class="content">
+            <h1>NomNotes</h1>
+            <div class="container">
+                <div class="input-bar">
+                    <input type="text" id="item-input" name="item-input" placeholder="e.g. kimchi">
+                    <div class="submit">
+                        <button class="submit-btn">Submit</button>
+                    </div>
+                </div>
+                <div class="grocery-list">
+                    <!-- currently hard coded list -->
+                    <ul id="grocery-list">
+                        <li class="title"><input type="checkbox">Bacon</li>
+                        <div class="btn-container">
+                            <button type="button" class="edit-btn"><i class="fa-solid fa-pen-to-square"></i></button>
+                            <button type="button" class="delete-btn"><i class="fa-solid fa-trash"></i></button>
+                        </div>
+                    </ul>
+                </div>
+                <!-- clears items only in this list -->
+                <div class="clearBtn">
+                    <button class="clear-btn">Clear Items</button>
                 </div>
             </div>
-            <div class="grocery-list">
-                <!-- currently hard coded list -->
-                <ul id="grocery-list">
-                    <li><input type="checkbox">Bacon</li>
-                    <li><input type="checkbox">Milk</li>
-                    <li><input type="checkbox">Eggs</li>
+    
+            <div class="cart">
+                <h1>Currently in Cart</h1>
+                <!-- clear all items in both list -->
+                <ul id="cart-list">
+                    <li>Kimchi</li>
                 </ul>
+                <div class="finishBtn">
+                    <button class="finish-btn">Done</button>
+                </div>
+    
+    
             </div>
-            <!-- clears items only in this list -->
-            <div class="clearBtn">
-                <button>Clear Items</button>
-            </div>
-        </div>
-
-        <div class="cart">
-            <h1>Currently in Cart</h1>
-            <!-- clear all items in both list -->
-            <ul id="cart-list">
-                <li>Kimchi</li>
-            </ul>
-            <div class="finishBtn">
-                <button>Done</button>
-            </div>
-
-
         </div>
     </div>
 
-
+    <script src="script.js"></script>
 </body>
 </html>
