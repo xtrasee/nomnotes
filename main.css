@@ -31,34 +31,53 @@ body{
              -6px -6px 60px #fffff6;
 }
 
+.container{
+    transition: all 0.3s linear;
+    margin-top: 2rem;
+    /* visibility: hidden; */
+    display: none;
+}
+
+.show-container{
+    display: contents;
+}
+
 .content{
-    position: relative;
     z-index: 1;
 }
 
 .overlay-image {
     position: absolute;
-    top: 0;
-    right: 18%;
-    width: 15%;
-    height: 15%;
+    top: -30px;
+    right: -30px;
+    width: 100px;
+    height: 100px;
     z-index: 2;
+    opacity: 0.6;
 }
 
 .overlay-image-2 {
     position: absolute;
-    top: 65%;
-    right: 63%;
-    width: 20%;
-    height: 20%;
+    bottom: -10px;
+    left: -80px;
+    width: 150px;
+    height: 150px;
     z-index: 2;
+    opacity: 0.8;
 }
 
 h1{
     font-family: 'hooey';
     text-align: center;
     color: #C70039;
-    font-size: 3.5rem;
+    font-size: 5rem;
+}
+
+h3{
+    font-family: 'hooey';
+    text-align: center;
+    color: #C70039;
+    font-size: 2.5rem;
 }
 
 /* input */
@@ -98,8 +117,24 @@ input:focus{
 
 ul{
     list-style-type: none;
-    width: 75%;
-    margin-left: 12.5%;
+    width: 100%;
+}
+
+ li{
+    display: flex;
+    justify-content: space-between;
+ }
+
+.btn-container{
+    display: flex;
+    margin-left: 10rem;
+
+}
+
+.btn-container button{
+    margin-left: 0.5rem;
+    text-align: center;
+    padding: 0.15rem;
 }
 
 input[type="checkbox"] {
