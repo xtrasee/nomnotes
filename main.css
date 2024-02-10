@@ -120,14 +120,15 @@ ul{
     width: 100%;
 }
 
- li{
+ .grocery-item{
     display: flex;
     justify-content: space-between;
+    border: 1px solid pink;
  }
 
 .btn-container{
     display: flex;
-    margin-left: 10rem;
+    margin-left: 15rem;
 
 }
 
