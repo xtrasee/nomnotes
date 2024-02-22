@@ -34,7 +34,6 @@ body{
 .container{
     transition: all 0.3s linear;
     margin-top: 2rem;
-    /* visibility: hidden; */
     display: none;
 }
 
@@ -104,7 +103,7 @@ input:focus{
 }
 
 .submit button{
-    width: 100%;
+    width: 75px;
     font-family: 'Hind';
     padding: 0.25rem 0.75rem;
     background-color: #FF6969;
@@ -123,12 +122,13 @@ ul{
  .grocery-item{
     display: flex;
     justify-content: space-between;
-    border: 1px solid pink;
  }
 
-.btn-container{
+.grocery-item .btn-container{
     display: flex;
+    justify-content: end;
     margin-left: 15rem;
+    border: 1px solid red;
 
 }
 
@@ -155,4 +155,8 @@ input[type="checkbox"] {
 
 .clearBtn, .finishBtn{
     text-align: center;
+}
+
+@media screen and (max-width:768px) {
+    
 }

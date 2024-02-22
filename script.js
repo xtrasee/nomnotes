@@ -38,7 +38,7 @@ function addItem(e) {
         
         element.innerHTML =
         `
-        <input type = "checkbox"> 
+        <input type = "checkbox">
         <p>${value}</p>
         <div class="btn-container">
             <button type="button" class="edit-btn"><i class="fa-solid fa-pen-to-square"></i></button>
@@ -113,15 +113,29 @@ function setBackToDefault() {
 
 // local stoage
 function addToLocalStorage(id, value) {
-    console.log('add to local');
+    const grocery = { id, value };
+    let items = getLocalStorage();
+    items.push(grocery);
+    console.log(items);
+    localStorage.setItem('list', JSON.stringify(items));
 }
 
 function removeFromLocalStorage(id) {
-    console.log('removed from local');
+    let items = getLocalStorage();
+
+    items = items.filter(function (item) {
+        if (item.id !== id) {
+            return item;
+        }
+    });
+    localStorage.setItem('list', JSON.stringify(items));
 }
 
 function editLocalStorage(id, value) {
     console.log('edit');
+}
+function getLocalStorage() {
+    return localStorage.getItem('list')?JSON.parse(localStorage.getItem('list')):[];
 }
 // setup items
 
