@@ -148,8 +148,8 @@ function createListItem(id, value) {
     
     element.innerHTML =
     `
-    <input type = "checkbox">
-    <p>${value}</p>
+    <input type="checkbox">
+    <p class='title'>${value}</p>
     <div class="btn-container">
         <button type="button" class="edit-btn"><i class="fa-solid fa-pen-to-square"></i></button>
         <button type="button" class="delete-btn"><i class="fa-solid fa-trash"></i></button>

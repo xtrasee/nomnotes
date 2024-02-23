@@ -1,8 +1,10 @@
 :root {
     --beige-background: #fffcf4;
+    --black: #252525;
     --red: #C70039;
     --title-font: 'hooey';
     --main-font: 'hind';
+    --sm-font: 0.75rem;
 }
 
 @font-face {
@@ -102,7 +104,7 @@
 
     .input-bar{
         width: 100%;
-        height: 1rem;
+        height: 1.25rem;
         display: flex;
         border-radius: 10px;
         margin-bottom: 2rem;
@@ -115,19 +117,22 @@
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
         border-right: none;
-        border: 0.75px solid #141E46;
+        border: 0.75px solid var(--red);
     }
 
-    .submit button{
-        width: 20px;
-        height: 1rem;
+    .item{
+        font-size: var(--sm-font);
+    }
+
+    .submit-btn{
+        width: 3rem;
         font-family: 'Hind';
         font-size: 0.50rem;
-        padding: 0.25rem 0.75rem;
         background-color: var(--red);
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
         border: 0.75px solid var(--red);
+        color: white;
     }
 
     /* grocery list */
@@ -137,12 +142,20 @@
 
     .grocery-item{
         display: flex;
-        justify-content: start;
-        font-size: 0.75rem;
+        font-size: var(--sm-font);
+        margin-bottom: 0.5rem;
+    }
+
+    .title{
+        inline-size: 50%;
+        overflow-wrap: break-word;
+        text-align: start;
+        color: var(--black);
     }
 
     .grocery-item .btn-container{
         width: 100%;
+        margin-top: 0.15rem;
         position: absolute;
         display: flex;
         justify-content: end;
@@ -150,31 +163,39 @@
 
     .btn-container button{
         margin-left: 0.25rem;
-        margin-top: 0.30rem;
         text-align: center;
         padding: 0rem;
         font-size: 0.5rem;
+        color: var(--black);
     }
 
     input[type="checkbox"]{
+        width: 0.75rem;
         border-radius: 50%;
         margin-right: 0.25rem;
     }
 
-    input[type="checkbox"]:checked{
+    /* input[type="checkbox"]:checked{
         background-color: #C70039;
-    }
+    } */
 
     .clearBtn button,
     .finishBtn button{
         margin: 2rem 0rem;
         padding: 0.15rem 0.75rem;
-        background-color: var(--red);
         width: 100%;
-        border: 1px solid black;
+        background-color: var(--red);
+        border: 1px solid var(--red);
         border-radius: 8px;
         font: var(--main-font);
-        font-size: 0.50rem;
+        font-size: 0.5rem;
+        color: white;
     }
 
+}
+
+@media (min-width: 48em){
+    .wrapper{
+        width: 75%;
+    }
 }
