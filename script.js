@@ -148,14 +148,14 @@ function createListItem(id, value) {
     
     element.innerHTML =
     `
-    <label class="lbl-checkbox">
-        <input type="checkbox" id="check">
-    </label>
+
+    <input type="checkbox" id="check">
     <p class="title">${value}</p>
-    <div class="btn-container">
-        <button type="button" class="edit-btn"><i class="fa-solid fa-pen-to-square"></i></button>
-        <button type="button" class="delete-btn"><i class="fa-solid fa-trash"></i></button>
-    </div>
+        <div class="btn-container">
+            <button type="button" class="edit-btn"><i class="fa-solid fa-pen-to-square"></i></button>
+            <button type="button" class="delete-btn"><i class="fa-solid fa-trash"></i></button>
+        </div>
+
     `
     const deleteBtn = element.querySelector('.delete-btn');
     const editBtn = element.querySelector('.edit-btn');
@@ -164,3 +164,4 @@ function createListItem(id, value) {
     // append child to list
     groceryList.appendChild(element);
 }
+

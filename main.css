@@ -57,7 +57,7 @@
         z-index: 1;
     }
     
-    .clearBtn, .finishBtn{
+    .clearBtn{
         text-align: center;
     }
 
@@ -153,27 +153,23 @@
         text-align: start;
         color: var(--black);
         width: 75%;
+        margin-left: 0.25rem;
     }
 
     .grocery-item .btn-container{
         width: 100%;
-        position: absolute;
         display: flex;
         justify-content: end;
-        margin-top: .5rem;
     }
 
     .btn-container button{
         margin-left: 0.25rem;
+        font-size: 0.75rem;
         text-align: center;
         padding: 0.15rem;
         color: var(--black);
         border: none;
         background-color: #fff7e6;
-    }
-
-    .lbl-checkbox{
-        padding: 0.50rem;
     }
 
     input[type="checkbox"]{
@@ -183,12 +179,9 @@
         border-radius: 2px;
         cursor:pointer;
         display: flex;
-        align-items: center;
-        justify-content: center;
         outline: none;
-        height: 1rem;
-        width: 1rem;
-        padding: 0.25rem;
+        height: 0.75rem;
+        width: 0.75rem;
         margin-top: 0.25rem;
     }
 
@@ -196,16 +189,20 @@
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
         content: "\f00c";
-        font-size: 1rem;
         color: #929292;
+        margin-left: 0.0rem;
     }
 
     input[type="checkbox"]:checked{
         background-color: #FF6969;
     }
 
-    .clearBtn button,
-    .finishBtn button{
+    input[type=checkbox]:checked + p
+    {
+        text-decoration: line-through;
+    }
+
+    .clearBtn button{
         margin: 2rem 0rem;
         padding: 0.15rem 0.75rem;
         width: 100%;
@@ -216,7 +213,6 @@
         font-size: 0.5rem;
         color: white;
     }
-
 }
 
 @media (min-width: 35.5em){
@@ -252,10 +248,68 @@
     input::placeholder{
         font-size: var(--sm-font);
     }
+
+    input[type="checkbox"]{
+        height: 1rem;
+        width: 1rem;
+        padding: 0.15rem;
+        margin-top: 0.75rem;
+    }
+
+    .btn-container button{
+        font-size: 1rem;
+    }
 }
 
 @media (min-width: 64em){
     .wrapper{
         max-width: 50%;
+    }
+
+    .overlay-image {
+        top: -50px;
+        right: -50px;
+        width: 120px;
+        height: 120px;
+    }
+    
+    .overlay-image-2 {
+        bottom: -30px;
+        left: -45px;
+        width: 120px;
+        height: 120px;
+    }
+
+    h1{
+        font-size: 5rem;
+    }
+
+    input::placeholder{
+        font-size: 0.9rem;
+    }
+
+    .submit-btn{
+        font-size: 0.85rem;
+    }
+
+    input[type="checkbox"]{
+        height: 1.5rem;
+        width: 2rem;
+    }
+
+    .title{
+        font-size: 1.5rem;
+        margin-left: 0.75rem;
+    }
+
+    .btn-container button{
+        font-size: 1.25rem;
+    }
+
+    .clearBtn button{
+        font-size: 1rem;
+        width: 50%;
+        padding: 0.5rem;
+        margin-top: 2rem;
     }
 }
