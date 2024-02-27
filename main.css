@@ -103,7 +103,7 @@
 
     form{
         width: 100%;
-        height: 2rem;
+        height: 1.5rem;
         display: flex;
         flex-direction: row;
         margin-bottom: 2rem;
@@ -113,8 +113,8 @@
     form input{
         width: 100%;
         background-color: var(--beige-background);
-        border-top-left-radius: 5px;
-        border-bottom-left-radius: 5px;
+        /* border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px; */
         border: 0.75px solid var(--red);
         padding-left: 0.5rem;
     }
@@ -237,6 +237,10 @@
         margin-left: 0.25rem;
         width: 70%;
         margin-top: 0.5rem;
+    }
+
+    form{
+        height: 2rem;
     }
 
     .input-bar{
