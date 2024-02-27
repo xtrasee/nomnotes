@@ -116,7 +116,7 @@
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
         border-top-right-radius: 0px;
-        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
         border: 0.75px solid var(--red);
         padding-left: 0.5rem;
     }
