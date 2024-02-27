@@ -22,7 +22,7 @@
     box-sizing: border-box;
 }
 
-@media all and (min-width: 20em) {
+@media all and (min-width: 10em) {
     
     body{
         background-color: var(--beige-background);
