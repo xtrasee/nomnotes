@@ -100,12 +100,6 @@
         /* This bit sets up the horizontal layout */
         display:flex;
         flex-direction:row;
-        
-        /* This bit draws the box around it */
-        border:1px solid grey;
-      
-        /* I've used padding so you can see the edges of the elements. */
-        padding:1px;
     }    
 
     /* input */
