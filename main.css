@@ -113,8 +113,10 @@
     form input{
         width: 100%;
         background-color: var(--beige-background);
-        /* border-top-left-radius: 5px;
-        border-bottom-left-radius: 5px; */
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-top-right-radius: 0px;
+        border-top-right-radius: 0px;
         border: 0.75px solid var(--red);
         padding-left: 0.5rem;
     }
@@ -128,8 +130,8 @@
         font-family: 'Hind';
         font-size: 0.50rem;
         background-color: var(--red);
-        /* border-top-right-radius: 5px;
-        border-bottom-right-radius: 5px; */
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
         border: 0.75px solid var(--red);
         color: white;
     }
