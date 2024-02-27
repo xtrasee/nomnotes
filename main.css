@@ -211,7 +211,7 @@
         border: 1px solid var(--red);
         border-radius: 8px;
         font: var(--main-font);
-        font-size: 0.5rem;
+        font-size: 1rem;
         color: white;
     }
 }
@@ -225,10 +225,12 @@
         font-size: 3.5rem;
     }
 
-    .clearBtn button,
-    .finishBtn button,
     .btn-container button{
         font-size: var(--sm-font);
+    }
+
+    .clearBtn{
+        font-size: 0.75rem;
     }
 
     .submit-btn{
